@@ -1,15 +1,4 @@
-const adviceId = document.querySelector('span')
-const div = document.querySelector('#button')
 
-
-
-function clear(ele){
-ele.innerText = ''
-}
-
-
-
-const randomAdvice = null
 
 const getAdvice = async() =>{
 try{
@@ -22,7 +11,7 @@ try{
 
  const adviceId = document.querySelector('span')
  const advice = document.querySelector('p')
- clear(advice)
+
 
  advice.innerText = oneAdvice 
  adviceId.innerText = dataId
