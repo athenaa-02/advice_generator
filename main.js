@@ -24,12 +24,8 @@ try{
  const advice = document.querySelector('p')
  clear(advice)
 
- advice.innerText = oneAdvice
+ advice.innerText = oneAdvice 
  adviceId.innerText = dataId
-
-
- 
-
 
 }catch{
 
