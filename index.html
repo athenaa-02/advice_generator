@@ -7,9 +7,21 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
   <title>Frontend Mentor | Advice generator app</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
 </head>
-<body>
-
+<body class="">
+<main class="w-screen h-screen bg-[#202733] flex justify-center items-center">
+  <section class="w-[540px] h-[332px] relative bg-[rgb(49,58,72)]/100 rounded-2xl pl-[48px] pr-[48px] gap-[20px] flex flex-col" >
+     <div id="adv_id" class="font-extrabold text-[#53FFAA] h-[18px] mt-[48px] text-[13px] leading-[100%] tracking-[4.09px] text-center">advice #<span></span></div>
+     <p class="text-[26px] text-white font-extrabold text-center">“It is easy to sit up and take notice, what's difficult is getting up and taking action.”</p>
+     <img src="./images/pattern-divider-desktop.svg" alt="">
+     
+     <div id="button" onclick="getAdvice()" class="bg-[#53FFAA] absolute bottom-[-32px] left-[235px] w-[64px] h-[64px] rounded-full flex justify-center items-center">
+     <img src="./images/./icon-dice.svg" alt="">
+     </div>  
+  </section>
+</main>
  
 </body>
 </html>
