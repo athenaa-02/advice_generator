@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./output.css" rel="stylesheet">
   <title>Frontend Mentor | Advice generator app</title>
+  <link href="./output.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </head>
 <body class="">
 <main class="w-screen h-screen bg-[#202733] flex justify-center items-center">
   <section class="w-[540px] h-[332px] relative bg-[rgb(49,58,72)]/100 rounded-2xl pl-[48px] pr-[48px] gap-[20px] flex flex-col" >
-     <div id="adv_id" class="font-extrabold text-[#53FFAA] h-[18px] mt-[48px] text-[13px] leading-[100%] tracking-[4.09px] text-center">advice #<span></span></div>
-     <p class="text-[26px] text-white font-extrabold text-center"></p>
+     <div id="adv_id" class="font-extrabold text-[#53FFAA] h-[18px] mt-[48px] text-[13px] leading-[100%] tracking-[4.09px] text-center">advice #<span id="span_for_id"></span></div>
+     <p id="advice" class="text-[26px] text-white font-extrabold text-center min-h-24">never give up!</p>
      <img src="./images/pattern-divider-desktop.svg" alt="">
-     
-     <div onclick="getAdvice()" class="bg-[#53FFAA] absolute bottom-[-32px] left-[235px] w-[64px] h-[64px] rounded-full flex justify-center items-center">
+
+     <div onclick="getAdvice()" class="bg-[#53FFAA] absolute cursor-pointer bottom-[-32px] left-[235px] w-[64px] h-[64px] rounded-full flex justify-center items-center">
      <img src="./images/./icon-dice.svg" alt="">
      </div>  
   </section>

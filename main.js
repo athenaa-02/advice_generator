@@ -9,8 +9,8 @@ try{
  let dataId = data.id
  let oneAdvice = data.advice
 
- const adviceId = document.querySelector('span')
- const advice = document.querySelector('p')
+ const adviceId = document.querySelector('span_for_id')
+ const advice = document.querySelector('.advice')
 
 
  advice.innerText = oneAdvice 

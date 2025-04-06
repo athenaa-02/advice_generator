@@ -7,6 +7,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-white: #fff;
+    --spacing: 0.25rem;
     --font-weight-extrabold: 800;
     --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
@@ -120,7 +121,7 @@
   }
   @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
     ::placeholder {
-      color: color-mix(in oklab, currentColor 50%, transparent);
+      color: color-mix(in oklab, currentcolor 50%, transparent);
     }
   }
   textarea {
@@ -165,35 +166,11 @@
   .static {
     position: static;
   }
-  .bottom-\[-32\] {
-    bottom: -32;
-  }
   .bottom-\[-32px\] {
     bottom: -32px;
   }
-  .bottom-\[-\] {
-    bottom: -;
-  }
-  .left-\[50\%\] {
-    left: 50%;
-  }
-  .left-\[200px\] {
-    left: 200px;
-  }
-  .left-\[230px\] {
-    left: 230px;
-  }
   .left-\[235px\] {
     left: 235px;
-  }
-  .left-\[240px\] {
-    left: 240px;
-  }
-  .left-\[270px\] {
-    left: 270px;
-  }
-  .mt-\[30px\] {
-    margin-top: 30px;
   }
   .mt-\[48px\] {
     margin-top: 48px;
@@ -219,6 +196,15 @@
   .h-screen {
     height: 100vh;
   }
+  .min-h-24 {
+    min-height: calc(var(--spacing) * 24);
+  }
+  .min-h-28 {
+    min-height: calc(var(--spacing) * 28);
+  }
+  .min-h-32 {
+    min-height: calc(var(--spacing) * 32);
+  }
   .w-\[64px\] {
     width: 64px;
   }
@@ -234,6 +220,9 @@
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -248,12 +237,6 @@
   }
   .gap-\[20px\] {
     gap: 20px;
-  }
-  .gap-\[30px\] {
-    gap: 30px;
-  }
-  .gap-\[40px\] {
-    gap: 40px;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -288,9 +271,6 @@
   }
   .text-\[26px\] {
     font-size: 26px;
-  }
-  .text-\[28px\] {
-    font-size: 28px;
   }
   .leading-\[100\%\] {
     --tw-leading: 100%;
